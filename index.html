@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>LookToken</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Web 3 CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+
+    <!-- Moralis SDK CDN-->
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  </head>
+  <body>
+        <!-- Navigation begins-->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">Look-Token dApp</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-primary" id="btn-login">Connect Wallet</button>
+                        </li>
+                      <li class="nav-item">
+                        <button type="button" class="btn" id="btn-logout"> Disconnect Wallet</button>
+                      </li>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    <!-- Navigation Ends-->
+
+    <!-- Hero Banner Section -->
+    <section class="hero-banner bg-light py-5">
+        <div class="container">
+            <div class="row row align-items-center">
+                <div class="col-lg-5 offset-lg-1 order-lg-1">
+                    <h1 class="mt-3" id = "price">Current Price</h1>
+                        
+                        <div id="eth_price"></div>
+                        <div id="usd_price"></div>
+                    
+               </div>
+                <div class="col-lg-6">
+                    <h1 class="mt-3">Look-Token dApp</h1>
+    
+                    <p class="lead text-secondary my-5">Welcome to the official <strong>Look-Token dApp</strong>. Search the price of any token on the blockchain Ethereum. Token will only display price in Ethereum and USD. Enjoy.</p>
+                    <p class="lead text-secondary my-5">To use, simply select <strong>SEARCH PRICE</strong> below.</p>
+
+                    <!-- Look Token input-->
+                    <input type="text" class="form-control" placeholder="0x51491077...F986CA" aria-describedby="button-addon1" id="address">
+                    <br>
+
+                    <div class="row">
+                        <a href="#" class="btn btn-primary btn-lg border" id="button">SEARCH PRICE</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div id="price">
+            
+            <div id="eth_price"></div>
+            <div id="usd_price"></div>
+        </div>
+    </div>
+
+
+
+      
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <script src="mm.js"></script>
+  </body>
+</html>
