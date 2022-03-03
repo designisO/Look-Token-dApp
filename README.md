@@ -8,7 +8,7 @@
 
 In this project I was able to create token price checker on the Ethereum mainnet. The goal is to paste the token address and get the output of the current ETH and USD prices. For back-end works I used Moralis API and the front end was built using Bootstrap5.
 
-Live Page:  https://designiso.github.io/CHATTYme-dApp/ (Desktop Only)
+Live Page:  https://designiso.github.io/Look-Token-dApp/ (Desktop Only)
 
 ## Getting Started
 
